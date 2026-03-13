@@ -1,0 +1,37 @@
+body {
+  max-width: 170px;
+}
+.menu {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column: end;
+
+  border: solid black 1px;
+  border-radius: 12px;
+  padding: 8px 10px;
+  align-items: start;
+}
+
+.icon {
+  width: 15px;
+  height: auto;
+  grid-column: 2;
+  justify-self: end;
+}
+.container {
+  grid-column: 1;
+  grid-row: 1;
+}
+.option {
+  padding: 0 6px;
+  transition: all 0.2s;
+}
+.option:hover {
+  background-color: lightslategrey;
+  border-radius: 8px;
+  padding: 0 6px;
+  width: 100%;
+}
+.disable {
+  display: none;
+}
